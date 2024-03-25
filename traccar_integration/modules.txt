@@ -1,1 +1,1 @@
-Traccar Integration
+Traccar
