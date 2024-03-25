@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-10 13:42:19.085141",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "server_url",
+  "column_break_oehd",
+  "token"
+ ],
+ "fields": [
+  {
+   "description": "For example, https://demo.traccar.org/",
+   "fieldname": "server_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Server URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_oehd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Small Text",
+   "label": "Token"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-03-11 19:57:13.367654",
+ "modified_by": "Administrator",
+ "module": "Traccar",
+ "name": "Traccar Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
