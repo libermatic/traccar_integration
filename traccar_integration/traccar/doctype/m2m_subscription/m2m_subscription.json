@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:msin",
+ "creation": "2024-03-13 02:11:13.679284",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "msin",
+  "activation_date",
+  "disabled",
+  "column_break_zgjj",
+  "operator",
+  "expiry_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "msin",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MSIN",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "column_break_zgjj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "activation_date",
+   "fieldtype": "Date",
+   "label": "Activation Date"
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Data",
+   "label": "Operator"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-25 19:21:16.784434",
+ "modified_by": "Administrator",
+ "module": "Traccar",
+ "name": "M2M Subscription",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
