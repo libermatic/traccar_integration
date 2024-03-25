@@ -1,0 +1,203 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-11 03:54:01.782055",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_name",
+  "disabled",
+  "column_break_zinj",
+  "email",
+  "phone",
+  "attributes",
+  "preferences_section",
+  "map",
+  "latitude",
+  "longitude",
+  "zoom",
+  "column_break_mdlh",
+  "coordinate_format",
+  "poi_layer",
+  "twelve_hour_format",
+  "permissions_section",
+  "devices",
+  "device_limit",
+  "user_limit",
+  "column_break_nuak",
+  "expiration_time",
+  "administrator",
+  "readonly",
+  "device_readonly",
+  "limit_commands",
+  "fixed_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "User Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "default": "0",
+   "fieldname": "readonly",
+   "fieldtype": "Check",
+   "label": "Read Only"
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "Data",
+   "label": "Map"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "zoom",
+   "fieldtype": "Int",
+   "label": "Zoom"
+  },
+  {
+   "default": "0",
+   "fieldname": "twelve_hour_format",
+   "fieldtype": "Check",
+   "label": "Twelve Hour Format"
+  },
+  {
+   "fieldname": "coordinate_format",
+   "fieldtype": "Data",
+   "label": "Coordinate Format"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "expiration_time",
+   "fieldtype": "Datetime",
+   "label": "Expiration Time"
+  },
+  {
+   "default": "0",
+   "fieldname": "device_readonly",
+   "fieldtype": "Check",
+   "label": "Device Read Only"
+  },
+  {
+   "default": "0",
+   "fieldname": "limit_commands",
+   "fieldtype": "Check",
+   "label": "Limit Commands"
+  },
+  {
+   "default": "0",
+   "fieldname": "fixed_email",
+   "fieldtype": "Check",
+   "label": "Fixed Email"
+  },
+  {
+   "fieldname": "poi_layer",
+   "fieldtype": "Data",
+   "label": "POI Layer"
+  },
+  {
+   "default": "0",
+   "fieldname": "administrator",
+   "fieldtype": "Check",
+   "label": "Is Administrator"
+  },
+  {
+   "fieldname": "device_limit",
+   "fieldtype": "Int",
+   "label": "Device Limit"
+  },
+  {
+   "fieldname": "user_limit",
+   "fieldtype": "Int",
+   "label": "User Limit"
+  },
+  {
+   "fieldname": "column_break_zinj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "preferences_section",
+   "fieldtype": "Section Break",
+   "label": "Preferences"
+  },
+  {
+   "fieldname": "column_break_mdlh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "permissions_section",
+   "fieldtype": "Section Break",
+   "label": "Permissions"
+  },
+  {
+   "fieldname": "column_break_nuak",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attributes",
+   "fieldtype": "JSON",
+   "hidden": 1,
+   "label": "Attributes"
+  },
+  {
+   "fieldname": "devices",
+   "fieldtype": "Table MultiSelect",
+   "label": "Devices",
+   "options": "Traccar UserDevice"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2024-03-16 23:41:35.599676",
+ "modified_by": "Administrator",
+ "module": "Traccar",
+ "name": "Traccar User",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "email"
+}
