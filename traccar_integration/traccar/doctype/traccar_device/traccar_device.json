@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-10 19:07:51.051766",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "device_name",
+  "unique_id",
+  "phone",
+  "column_break_loei",
+  "model",
+  "category",
+  "disabled",
+  "attributes",
+  "section_break_ekcu",
+  "status",
+  "last_update",
+  "column_break_wbae",
+  "position_id",
+  "group_id",
+  "configuration_section",
+  "expiration_time",
+  "column_break_aksh",
+  "contact"
+ ],
+ "fields": [
+  {
+   "fieldname": "unique_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "IMEI",
+   "options": "Serial No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_loei",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Link",
+   "label": "MSIN",
+   "options": "M2M Subscription",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fetch_from": "unique_id.item_name",
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "fieldname": "section_break_ekcu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_update",
+   "fieldtype": "Datetime",
+   "label": "Last Update",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wbae",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expiration_time",
+   "fieldtype": "Datetime",
+   "label": "Expiration Time"
+  },
+  {
+   "fieldname": "device_name",
+   "fieldtype": "Data",
+   "label": "Friendly Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attributes",
+   "fieldtype": "JSON",
+   "hidden": 1,
+   "label": "Attributes"
+  },
+  {
+   "fieldname": "position_id",
+   "fieldtype": "Data",
+   "label": "Position ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "group_id",
+   "fieldtype": "Data",
+   "label": "Group ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "configuration_section",
+   "fieldtype": "Section Break",
+   "label": "Configuration"
+  },
+  {
+   "fieldname": "column_break_aksh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [
+  {
+   "group": "Documents",
+   "link_doctype": "Traccar User",
+   "link_fieldname": "device",
+   "table_fieldname": "devices"
+  }
+ ],
+ "modified": "2024-03-16 23:52:02.634344",
+ "modified_by": "Administrator",
+ "module": "Traccar",
+ "name": "Traccar Device",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "device_name,unique_id,phone",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Red",
+   "title": "offline"
+  },
+  {
+   "color": "Green",
+   "title": "online"
+  },
+  {
+   "color": "Gray",
+   "title": "unknown"
+  }
+ ],
+ "title_field": "device_name"
+}
